@@ -1,7 +1,7 @@
 import axios from 'axios';
 import api from "../shared/config/api";
 
-import {call, put , takeEvery, all} from "redux-saga/effects";
+import { call, put , takeEvery, all } from "redux-saga/effects";
 import { ADD_USER, UPDATE_USER, DELETE_USER, FETCH_USERS } from "./actionTypes";
 
 export function* fetchUsers() {

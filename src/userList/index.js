@@ -17,7 +17,7 @@ class UserList extends Component {
     }
 
     onEdit(id) {
-        this.props.history.push(`user/${id}`);
+        this.props.history.push(`/user/${id}`);
     }
 
     onDelete(id) {
