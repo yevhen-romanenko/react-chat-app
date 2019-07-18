@@ -3,6 +3,7 @@ import './App.css';
 
 import UserList from './userList/index';
 import UserPage from './userPage/index';
+import Chat from './chat/Chat';
 import {Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <Route exact path='/' component = {UserList} />
           <Route exact path='/user' component = {UserPage} />
           <Route path='/user/:id' component = {UserPage} />
+          <Route path='/chat' component = {Chat} />
       </Switch>
     </div>
   );
