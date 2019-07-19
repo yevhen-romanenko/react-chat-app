@@ -1,6 +1,6 @@
 const filename = '../messages/messages.json'
 let messages = require(filename)
-const helper = require('../helper.js')
+const helper = require('../helpers/helper')
 
 function getMessages() {
 

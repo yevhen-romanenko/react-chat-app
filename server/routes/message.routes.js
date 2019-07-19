@@ -30,7 +30,7 @@ router.get('/:id', m.mustBeInteger, async (req, res) => {
     })
 })
 
-router.post('/', m.checkFieldsPost, async (req, res) => {
+router.post('/', m.checkFieldsMessage, async (req, res) => {
     await message.insertMessage(req.body)
     .then(message => res.status(201).json({
         message: `The message #${message.id} has been created`,

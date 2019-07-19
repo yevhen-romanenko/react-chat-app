@@ -67,7 +67,7 @@ UserList.propTypes = {
 
 const mapStateToProps = (state) => {
     return {
-        users: state.users
+        users: state.userList
     }
 };
 
